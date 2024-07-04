@@ -1,24 +1,24 @@
 <?php
 
 require_once __DIR__ . '/products.php';
+require_once __DIR__ . '/category.php';
 
 class Accessories extends Products{
 
     private $size;
-    private $function;
+    private $material;
 
-    public function __construct($name, $brand, $price, $image, $is_available, Category $category, $size, $function) {
-        parent:: __construct($name, $brand, $price, $image, $is_available, $category);
+    public function __construct($name, $price, $image, $is_available, Category $category, $size, $material) {
+        parent:: __construct($name, $price, $image, $is_available, $category);
         $this->size = $size;
-        $this->function = $function;
+        $this->material = $material;
     }
 
     public function getSize(){
         return $this->size;
     }
 
-    public function getFunction(){
-        return $this->function;
+    public function getMaterial(){
+        return $this->material;
     }
-
 }

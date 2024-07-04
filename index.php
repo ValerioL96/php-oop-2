@@ -1,15 +1,5 @@
 <?php
 
-require_once __DIR__ . '/classes/products.php';
-require_once __DIR__ . '/classes/category.php';
-require_once __DIR__ . '/classes/food.php';
-require_once __DIR__ . '/classes/games.php';
-require_once __DIR__ . '/classes/accessories.php';
-
-$products = new Products(new Category('dog', 'cat', 'fish', 'bird'));
-
-var_dump($products);
-
 //L'e-commerce vende prodotti per gli animali.
 //I prodotti saranno:
 //cibo
@@ -26,3 +16,10 @@ var_dump($products);
 //- e stampate delle card contenenti i dettagli dei prodotti, 
 //come immagine, titolo, prezzo, icona della categoria ed il tipo di articolo che si sta visualizzando 
 //(prodotto, cibo, gioco, accessorio).
+
+require_once __DIR__ . '/classes/products.php';
+require_once __DIR__ . '/classes/category.php';
+require_once __DIR__ . '/classes/food.php';
+require_once __DIR__ . '/classes/games.php';
+require_once __DIR__ . '/classes/accessories.php';
+
