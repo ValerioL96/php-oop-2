@@ -1,15 +1,19 @@
 <?php
 
 class Category{
-    private $dog;
-    private $cat;
-    private $fish;
-    private $bird;
+    private $name;
+    private $icon;
 
-    public function __construct(string $dog, string $cat, string $fish, string $bird) {
-        $this->dog = $dog;
-        $this->cat = $cat;
-        $this->fish = $fish;
-        $this->bird = $bird;
+    public function __construct($name, $icon) {
+        $this->name = $name;
+        $this->icon = $icon;
+    }
+
+    public function getName(){
+        return $this->name;
+    }
+
+    public function getIcon(){
+        return $this->icon;
     }
 }
